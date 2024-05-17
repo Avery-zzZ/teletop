@@ -158,3 +158,16 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# dynaconf files
+.secrets.*
+
+#teletop dev files
+settings_dev.toml
+cache/
+
+#IDE
+.vscode/
+
+#temp
+temp.py

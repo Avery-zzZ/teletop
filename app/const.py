@@ -1,0 +1,4 @@
+ADD_CHANNEL_COMMAND_STR = "subscr_add"
+REMOVE_CHANNEL_COMMAND_STR = "subscr_rm"
+CHECK_CHANNEL_STATUS_COMMAND_STR = "subscr_status"
+LIST_SUBSCR_COMMAND_STR = "subscr_list"

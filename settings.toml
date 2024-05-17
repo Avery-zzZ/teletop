@@ -1,0 +1,19 @@
+# log level: debug, info, warning, error, critical
+# log_level = "info"
+
+[database]
+url = "mysql://root:password@host:port/dbname"
+
+[telegram]
+api_id = 10000001
+api_hash = ""
+bot_token = ""
+
+# folder to save telegram session file
+# session_folder = "./"
+
+# proxy to access telegram
+# [proxy]
+# protocol = "http"
+# host = "127.0.0.1"
+# port = 7890
