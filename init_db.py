@@ -1,4 +1,4 @@
-if __name__ == "__main__":
+def create_tables_if_not_exist():
     from sqlalchemy_utils import database_exists
     from config import settings
     
