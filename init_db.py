@@ -3,7 +3,7 @@ def create_tables_if_not_exist():
     from config import settings
     
     if not database_exists(settings['DATABASE']['url']):
-        create_database(settings['DATABASE']['url'])
+        create_database(settings['DATABASE']['url'], 'utf8mb4')
         
         from sqlalchemy import create_engine
         from db.dao.base import Base
