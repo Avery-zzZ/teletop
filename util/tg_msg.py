@@ -1,12 +1,14 @@
 from typing import List
 import re
 
-from telethon.tl.types import ReactionCount
+from telethon.tl.types import ReactionCount, ReactionCustomEmoji
 
 
 def get_not_neg_react_num(reacts: List[ReactionCount]) -> int:
     result = 0
     for react in reacts:
+        if isinstance(react.reaction, ReactionCustomEmoji):
+            continue
         if _not_neg_react(react.reaction.emoticon):
             result += react.count
     return result
